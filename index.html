@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>assignment1</title>
+	<style>
+		ul {
+			background:#EE9697;
+			padding:5px;
+		}
+		
+		li {
+			background:#FACCDB;
+			padding-left:10px;
+		}
+		
+		.name {
+			color:blue;
+		}
+		
+		#listbullets {
+			list-style-type:square;
+			list-style-position:outside;
+		}
+		
+		#image {
+			border:3px solid;
+			border-color:red;
+		}
+		
+		#imageclicked {
+			border:7px solid;
+			border-color:rebeccapurple;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>The <em>coolest</em> sea creatures on the block</h1>
+	<p>The ocean is filled with some of the strangest, most magical creatures you could possibly imagine.</p>
+	<h2>Here are some of my favorite sea creatures:</h2>
+	
+	<h3 class="name">Blue-Ringed Octopus, genus <i>Hapalochlaena</i></h3>
+	<p>Octopuses are some of the most emotionally intelligent creatures in the sea. This species is highly <b title="Don't confuse this with poisonous!">venomous</b>, which makes them dangerous to humans despite their small size and docile nature.</p>
+	<p><a href="fanclub.html">Join the Octopus Fanclub!</a></p>
+	<p style="text-decoration:underline;">Very beautiful, very powerful.</p>
+	
+	<h3 class="name">Sea Sponge, phylum <i>Porifera</i></h3>
+	<p>Sponges are one of the most curious life forms on Earth. They're extremely <b title="It has existed since the beginning of time.">primordial</b>, but have unique and complex inner mechanisms. They don't have true tissue or organ structures, which sets them apart from most animals.</p>
+	<img src="images/sponge.jpg" id="image" alt="A fish peeking out from a blue sea sponge.">
+	<br>
+	<button onclick="clicked()">Oh, a button!</button>
+	<p>Want to learn more? <a href="https://oceanservice.noaa.gov/facts/sponge.html">Click here!</a></p>
+	<p style="background: linear-gradient(to right, #99ccff 0%, #ff99ff 100%);">Very beautiful, very powerful.</p>
+	
+	<h3 class="name">Giant Isopod, genus <i>Bathynomus</i></h3>
+	<p>These creepy-crawly creatures are deep-sea <b title="They eat deceased matter.">scavengers</b> that look like some kind of aquatic pill bug, to which they are related.</p>
+	<p style="font-family:Arial;">Very beautiful, very powerful.</p>
+	
+	<h2>Here are some other amazing creatures:</h2>
+	<ul>
+		<li>Mantis Shrimp</li>
+		<li>Basking Shark</li>
+		<li>Cuttlefish</li>
+		<li>Ribbon Eel</li>
+		<li>Coelecanth</li>
+	</ul>
+</body>
+<footer>
+	<script>
+		function clicked() {
+			document.getElementById('image').id="imageclicked";
+		}
+	</script>
+</footer>
+</html>
