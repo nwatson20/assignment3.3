@@ -4,6 +4,15 @@
 <meta charset="utf-8">
 <title>assignment1</title>
 	<style>
+		h1 {
+			font-family: 'Kablammo', cursive;
+		}
+		
+		h2 {
+			font-family: 'Rubik Dirt', cursive;
+			color: gray;
+		}
+		
 		ul {
 			background:#EE9697;
 			padding:5px;
@@ -14,8 +23,18 @@
 			padding-left:10px;
 		}
 		
+		button, input text {
+			margin: 10px 0 10px 0;
+		}
+		
 		.name {
 			color:blue;
+		}
+		
+		#banner {
+			font-family: 'Marck Script', cursive;
+			font-size: 28px;
+			text-align: center;
 		}
 		
 		#listbullets {
@@ -33,6 +52,9 @@
 			border-color:rebeccapurple;
 		}
 	</style>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Kablammo&family=Marck+Script&family=Rubik+Dirt&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -51,7 +73,7 @@
 	<br>
 	<button onclick="clicked()">Oh, a button!</button>
 	<p>Want to learn more? <a href="https://oceanservice.noaa.gov/facts/sponge.html">Click here!</a></p>
-	<p style="background: linear-gradient(to right, #99ccff 0%, #ff99ff 100%);">Very beautiful, very powerful.</p>
+	<p id="banner" style="background: linear-gradient(to right, #99ccff 0%, #ff99ff 100%);">Very beautiful, very powerful.</p>
 	
 	<h3 class="name">Giant Isopod, genus <i>Bathynomus</i></h3>
 	<p>These creepy-crawly creatures are deep-sea <b title="They eat deceased matter.">scavengers</b> that look like some kind of aquatic pill bug, to which they are related.</p>
@@ -65,6 +87,33 @@
 		<li>Ribbon Eel</li>
 		<li>Coelecanth</li>
 	</ul>
+	<p>Here's a documentary about the incredible cuttlefish.</p>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/lcYXeqotzHw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+	<hr />
+	<h2>Tell us about <em>your</em> favorite sea creatures!</h2>
+	<form action="" method=""></form>
+	<label for="creature">1) Your favorite sea creature here:</label>
+		<input type="text" id="creature"><br />
+	
+	<label for="reason">2) Why do you like this creature? Check all that apply.</label><br />
+	
+	<input type="checkbox" id="reason1" value="features">
+		<label for="reason1"> They have cool survival features</label><br />
+	<input type="checkbox" id="reason2" value="experience">
+		<label for="reason2"> I have experience working with them</label><br />
+	<input type="checkbox" id="reason3" value="positive">
+		<label for="reason3"> They represent positive things to me</label><br />
+	<input type="checkbox" id="reason4" value="learning">
+		<label for="reason4"> I enjoy learning about them</label><br />
+	<input type="checkbox" id="reason5" value="beautiful">
+		<label for="reason5"> They are very beautiful</label><br />
+	<input type="checkbox" id="reason6" value="powerful">
+		<label for="reason6"> They are very powerful</label><br />
+	
+	<label for="picture">3) Add a picture of this creature.</label>
+		<input type="file" id="picture"><br />
+	
+	<button type="submit">Submit my response!</button>
 </body>
 <footer>
 	<script>
